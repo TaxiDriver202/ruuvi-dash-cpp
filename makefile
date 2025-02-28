@@ -1,5 +1,5 @@
 #requires c++17 or later
-CXXFLAGS= -std=c++17
+CXXFLAGS= -std=c++17 -O2
 CXX=g++
 
 ruuvidash: ruuvidash.o
