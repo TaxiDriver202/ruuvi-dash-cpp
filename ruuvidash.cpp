@@ -1,6 +1,13 @@
-#include "crow.h"
+/*  SPDX-License-Identifier: MIT 
+ *  Copyright 2025 Topias Silfverhuth  
+ */
 #include <vector>
+#include <string>
+#include <sstream>
 #include <unordered_set>
+#include <unistd.h>
+#include <crow.h>
+
 
 #define CROW_ENFORCE_WS_SPEC
 
@@ -12,7 +19,7 @@ class
 tags
 {
   private:
-    uint_fast16_t i;
+    unsigned short i;
     struct 
     tag
     {
