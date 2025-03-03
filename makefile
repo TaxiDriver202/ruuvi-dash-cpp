@@ -1,5 +1,9 @@
-#requires c++17 or later
-CXXFLAGS= -std=c++17 -O2
+#ruuvi-dash-cpp
+
+# edit to fit your machine
+CROWINC = -I/usr/include/crow
+#
+CXXFLAGS= -std=c++17 -O2 $(CROWINC)
 CXX=g++
 
 ruuvidash: ruuvidash.o
