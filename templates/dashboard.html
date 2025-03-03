@@ -143,7 +143,6 @@
 
         // Update data when received from server
         socket.addEventListener('message', function(data) {
-            console.log('Received data update:', data);
             let cleandata = JSON.parse(data.data)
             updateTable(cleandata);
         });
