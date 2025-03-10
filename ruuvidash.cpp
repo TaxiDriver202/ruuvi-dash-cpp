@@ -46,7 +46,7 @@ tags
         
         std::ostringstream txt;
         /* << operator of class ostream, which places the data in the correct json format into the std::ostringstream object nice and easily */
-        txt << "\"" << i << "\"" << ": " << "{\"temperature\": " << data["temperature"].d() << ",\"humidity\": " << data["humidity"].d() << ",\"pressure\": " << data["pressure"].d() << "}";
+        txt << "\"" << i << "\"" << ": " << "{\"temperature\": " << data["temperature"].d() << ",\"humidity\": " << data["humidity"].d() << ",\"pressure\": " << (data["pressure"].d()/1000) << "}";
         newtag.json = txt.str();
 
         tag_id[newtag.id] = newtag.json;
